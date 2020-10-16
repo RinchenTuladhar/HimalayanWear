@@ -1,0 +1,13 @@
+.navbar {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    li {
+      margin: 0 2rem;
+    }
+  }
+
+  &__logo {
+    flex: 1;
+  }
+}
