@@ -5,4 +5,19 @@
   text-decoration: none;
   border-radius: 2px;
   font-size: $font-small;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.register-btn {
+    padding: 1.5rem 4rem;
+    border: 0;
+    background: #6cbb6c;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
 }
