@@ -9,6 +9,7 @@
     &__image {
       img {
         max-width: 30vw;
+        max-height: 40rem;
         background: #fff;
         position: absolute;
         bottom: 0;
@@ -18,9 +19,18 @@
     &__description {
       &--title {
         margin-top: 10rem;
-        text-align: center;
         font-size: 2rem;
         color: #fff;
+      }
+
+      &--footer {
+        position: absolute;
+        bottom: 5rem;
+        color: #fff;
+
+        .button-wrapper {
+          margin-top: 3rem;
+        }
       }
     }
   }
