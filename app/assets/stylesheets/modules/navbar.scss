@@ -1,7 +1,13 @@
 .navbar {
+  background: $nav-grey;
+
   &__list {
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 2rem 0;
+    color: #fff;
+
     li {
       margin: 0 2rem;
     }
