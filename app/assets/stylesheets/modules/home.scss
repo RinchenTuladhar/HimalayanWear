@@ -1,0 +1,37 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.home-page {
+  .hero {
+    background-color: #0C8368;
+
+    &__image {
+      img {
+        max-width: 30vw;
+        max-height: 40rem;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    &__description {
+      &--title {
+        margin-top: 10rem;
+        font-size: 2rem;
+        color: #fff;
+      }
+
+      &--footer {
+        position: absolute;
+        bottom: 5rem;
+        color: #fff;
+
+        .button-wrapper {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
