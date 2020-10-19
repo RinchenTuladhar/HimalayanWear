@@ -4,8 +4,7 @@
   &__list {
     list-style-type: none;
     display: flex;
-    margin: 0;
-    padding: 2rem 0;
+    margin-bottom: 2rem;
     color: #000;
 
     li {
@@ -15,5 +14,9 @@
 
   &__logo {
     flex: 1;
+
+    img {
+      max-width: 15rem;
+    }
   }
 }

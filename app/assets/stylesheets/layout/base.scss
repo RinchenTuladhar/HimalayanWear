@@ -8,7 +8,6 @@
 }
 
 html {
-    // This defines what 1rem is
     font-size: 62.5%;
 }
 
@@ -30,4 +29,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+a {
+  text-decoration: none;
 }
