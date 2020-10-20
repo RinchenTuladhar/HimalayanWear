@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :category_allocations
+  resources :categories
   resources :products
   root :to => "home#index"
 

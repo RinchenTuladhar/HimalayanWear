@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @category_allocation.category_id %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @category_allocation.product_id %>
+</p>
+
+<%= link_to 'Edit', edit_category_allocation_path(@category_allocation) %> |
+<%= link_to 'Back', category_allocations_path %>

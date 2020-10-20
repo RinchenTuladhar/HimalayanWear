@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Category Allocations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Product</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @category_allocations.each do |category_allocation| %>
+      <tr>
+        <td><%= category_allocation.category_id %></td>
+        <td><%= category_allocation.product_id %></td>
+        <td><%= link_to 'Show', category_allocation %></td>
+        <td><%= link_to 'Edit', edit_category_allocation_path(category_allocation) %></td>
+        <td><%= link_to 'Destroy', category_allocation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category Allocation', new_category_allocation_path %>
