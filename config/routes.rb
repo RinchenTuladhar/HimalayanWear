@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :category_allocations
   resources :categories
   resources :products
+
+  get '/w/:id', to: "product_list#show"
+
   root :to => "home#index"
 
   resources :sessions, only: [:new, :create, :destroy]
