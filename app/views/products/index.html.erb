@@ -1,19 +1,18 @@
+<div class="products">
+
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
 
-<table>
+<table class="products-table">
   <thead>
     <tr>
       <th>Title</th>
-      <th>Description</th>
       <th>Category</th>
       <th>Sub category</th>
       <th>Quantity</th>
       <th>Sku</th>
       <th>Price</th>
-      <th>Price</th>
-      <th>Compare to price</th>
       <th>Compare to price</th>
       <th colspan="3"></th>
     </tr>
@@ -23,14 +22,11 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.title %></td>
-        <td><%= product.description %></td>
         <td><%= product.category&.name %></td>
         <td><%= product.sub_category&.name %></td>
         <td><%= product.quantity %></td>
         <td><%= product.sku %></td>
         <td><%= product.price %></td>
-        <td><%= product.price %></td>
-        <td><%= product.compare_to_price %></td>
         <td><%= product.compare_to_price %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
@@ -43,3 +39,4 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+</div>

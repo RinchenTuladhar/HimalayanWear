@@ -28,8 +28,6 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-
-        byebug
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
@@ -71,6 +69,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:title, :description, :category, :sub_category, :quantity, :sku, :price, :price, :compare_to_price, :compare_to_price)
+      params.require(:product).permit(:title, :description, :category_id, :sub_category_id, :quantity, :sku, :price, :compare_to_price, :compare_to_price)
     end
 end

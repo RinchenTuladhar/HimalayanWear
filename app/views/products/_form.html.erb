@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :sub_category %>
-    <%= form.number_field :sub_category_id %>
+    <%= form.collection_select :sub_category_id, SubCategory.order(:name), :id, :name %>
   </div>
 
   <div class="field">
@@ -43,15 +43,15 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price %>
+    <%= form.number_field :price, step: :any %>
   </div>
 
   <div class="field">
     <%= form.label :compare_to_price %>
-    <%= form.number_field :compare_to_price %>
+    <%= form.number_field :compare_to_price, step: :any  %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :class => "white-btn" %>
   </div>
 <% end %>
