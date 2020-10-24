@@ -1,0 +1,15 @@
+// Place all the styles related to the ProductList controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.products-list {
+  .product-preview {
+    margin-top: 5rem;
+    
+    &__image {
+     img {
+       max-width: 25rem;
+     }
+    }
+  }
+}

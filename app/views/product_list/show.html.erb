@@ -1,0 +1,12 @@
+<div class="products-list">
+  <h1>Products List</h1>
+
+    <% @products.each do |product| %>
+      <div class="product-preview">
+        <div class="product-preview__image"><%= image_tag(product.main_image) %></div>
+        <p class="product-preview__title"><%= product.title %></p>
+        <p class="product-preview__title"><%= product.price %></p>
+      </div>
+    <% end %>
+
+</div>

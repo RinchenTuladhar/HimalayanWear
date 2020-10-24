@@ -1,0 +1,20 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.products {
+  .products-table {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
+
+.product-form {
+  .image-wrapper {
+    &__image {
+      img {
+        max-width: 15rem;
+      }
+    }
+  }
+}

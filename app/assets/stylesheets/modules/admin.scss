@@ -1,0 +1,14 @@
+// Place all the styles related to the Admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.admin-page {
+
+  .links {
+    margin-top: 5rem;
+
+    &__page {
+      margin-top: 3rem;
+    }
+  }
+}
