@@ -8,7 +8,7 @@
 
     @include clearfix;
 
-    [class^="col-"] {
+    div[class*="col-"] {
         float: left;
 
         &:not(:last-child) {

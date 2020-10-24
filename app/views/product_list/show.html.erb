@@ -1,12 +1,22 @@
 <div class="products-list">
   <h1>Products List</h1>
 
-    <% @products.each do |product| %>
-      <div class="product-preview">
-        <div class="product-preview__image"><%= image_tag(product.main_image) %></div>
-        <p class="product-preview__title"><%= product.title %></p>
-        <p class="product-preview__title"><%= product.price %></p>
-      </div>
-    <% end %>
+    <% row_started = 0; %>
 
+    <% @products.each_with_index do |product, index| %>
+      <% if (index + 1) % 3 === 0 || index === 0%>
+        <% row_started = index %>
+        <div class="row">
+      <% end %>
+
+        <div class="col-1-of-3 product-preview">
+          <div class="product-preview__image"><%= image_tag(product.main_image) %></div>
+          <p class="product-preview__title"><%= product.title %></p>
+          <p class="product-preview__price">£<%= product.price %></p>
+        </div>
+
+      <% if (row_started + 3 === index) || index >= @products.count - 1; %>
+        </div>
+      <% end %>
+    <% end %>
 </div>

@@ -13,7 +13,7 @@
  *= require material_icons
  */
 
-@import "abstracts/mixins.scss";
+@import "abstracts/mixins.scss";    
 
 @import "form.scss";
 
@@ -27,5 +27,5 @@
 @import "modules/navbar.scss";
 @import "modules/users.scss";
 @import "modules/products.scss";
-@import "modules/product_list.scss";    
+@import "modules/product_list.scss";
 @import "modules/admin.scss";

@@ -5,11 +5,20 @@
 .products-list {
   .product-preview {
     margin-top: 5rem;
-    
+
     &__image {
      img {
-       max-width: 25rem;
+       max-width: -webkit-fill-available;
      }
+    }
+
+    &__price {
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    &__title {
+      margin-top: 1rem;
     }
   }
 }
