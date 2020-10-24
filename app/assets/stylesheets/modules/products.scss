@@ -8,3 +8,13 @@
     width: 100%;
   }
 }
+
+.product-form {
+  .image-wrapper {
+    &__image {
+      img {
+        max-width: 15rem;
+      }
+    }
+  }
+}

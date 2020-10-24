@@ -1,0 +1,22 @@
+<div class="admin-page">
+  <h1 class="title">Admin View</h1>
+
+  <div class="links">
+    <div class="links__page">
+      <h2>Products</h2>
+      <%= link_to "Products List", products_path, :class => "white-btn" %>
+      <%= link_to "Create Product", new_product_path, :class => "white-btn" %>
+    </div>
+
+    <div class="links__page">
+      <h2>Categories</h2>
+      <%= link_to "Categories List", categories_path, :class => "white-btn" %>
+      <%= link_to "New Category", new_category_path, :class => "white-btn" %>
+    </div>
+
+    <div class="links__page">
+      <h2>Sub Categories</h2>
+      <%= link_to "New Sub Category", new_sub_category_path, :class => "white-btn" %>
+    </div>
+  </div>
+</div>

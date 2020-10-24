@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'admin/index'
   resources :sub_categories
   resources :category_allocations
   resources :categories
   resources :products
+  resources :admin
 
   get '/w/:id', to: "product_list#show"
 
