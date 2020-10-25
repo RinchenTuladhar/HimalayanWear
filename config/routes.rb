@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   resources :product_list
 
   get '/w/:id', to: "product_list#show"
-
   root :to => "home#index"
 
   resources :sessions, only: [:new, :create, :destroy]
