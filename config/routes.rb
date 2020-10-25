@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   resources :categories
   resources :products
   resources :admin
+  resources :product_list
 
   get '/w/:id', to: "product_list#show"
-
   root :to => "home#index"
 
   resources :sessions, only: [:new, :create, :destroy]

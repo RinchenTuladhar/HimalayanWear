@@ -6,10 +6,6 @@
     display: flex;
     margin-bottom: 2rem;
     color: #000;
-
-    li {
-      margin: 0 2rem;
-    }
   }
 
   &__logo {
@@ -19,4 +15,43 @@
       max-width: 15rem;
     }
   }
+
+  .subnav .subnavlink {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover, .subnav:hover .subnavlink {
+        background-color: #30c5a3;
+    }
+
+    .navbar--link {
+      padding: 16px;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: #30c5a3;
+      width: 100%;
+      z-index: 1;
+      padding: 2rem;
+       a {
+         display: flex;
+         flex: 1;
+         color: white;
+       }
+    }
+
+    .subnav:hover .subnav-content {
+      display: flex;
+      float: left;
+      justify-content: space-evenly;
+    }
 }

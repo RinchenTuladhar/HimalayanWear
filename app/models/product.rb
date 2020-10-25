@@ -6,4 +6,12 @@ class Product < ApplicationRecord
   has_many_attached :images
 
   validates_uniqueness_of :sku
+
+  before_update :generate_url
+
+  def generate_url
+    return unless url.blank?
+    new_url = title.parameterize + "-" + id.to_s
+    self.url = new_url
+  end
 end

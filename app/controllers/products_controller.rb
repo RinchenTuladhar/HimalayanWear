@@ -7,8 +7,7 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  # GET /products/1
-  # GET /products/1.json
+  # GET /products/bumbag-1
   def show
   end
 
@@ -69,6 +68,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:title, :description, :category_id, :sub_category_id, :quantity, :sku, :price, :compare_to_price, :compare_to_price, :main_image, images: [])
+      params.require(:product).permit(:title, :description, :category_id, :sub_category_id, :quantity, :sku, :price, :compare_to_price, :compare_to_price, :url, :main_image, images: [])
     end
 end

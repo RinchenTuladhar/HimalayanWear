@@ -71,6 +71,11 @@
     <%= form.file_field :images, multiple: true %>
   </div>
 
+  <div class="field">
+    <%= form.label "URL (leave blank for default)" %>
+    <%= form.text_field :url %>
+  </div>
+
   <div class="actions">
     <%= form.submit :class => "white-btn" %>
   </div>
