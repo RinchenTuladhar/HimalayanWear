@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :products
   resources :admin
+  resources :product_list
 
   get '/w/:id', to: "product_list#show"
 
