@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:edit, :update, :destroy]
+  before_action :set_product_by_url, only: [:show]
 
   # GET /products
   # GET /products.json
@@ -64,6 +65,10 @@ class ProductsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
+    end
+
+    def set_product_by_url
+      @product = Product.find_by(url: params[:url]) || Product.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
